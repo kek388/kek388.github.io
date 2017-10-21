@@ -1074,6 +1074,8 @@ border-radius:50%;
 .educenter{
     display: flex;
     justify-content:center;
+        vertical-align: middle;
+
 	 }
 
 .aboutpic{
