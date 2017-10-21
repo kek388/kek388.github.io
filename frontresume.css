@@ -1074,7 +1074,10 @@ border-radius:50%;
 .educenter{
     display: flex;
     justify-content:center;
-        vertical-align: middle;
+        display: -webkit-flex;
+            -webkit-justify-content:center;
+
+
 
 	 }
 
