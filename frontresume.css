@@ -48,6 +48,10 @@ li a:hover{
      }
 
 
+table{
+	height:1%;
+}
+
 .background1{
 	position:relative;
 margin:0px;	
@@ -55,6 +59,7 @@ margin:0px;
 
 
 .background2 img {
+	height:94.8vh;
 	position:absolute;
 	animation: show 18s linear infinite 0s forwards ;
 	animation-play-state:running;
