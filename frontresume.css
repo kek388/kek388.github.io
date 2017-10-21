@@ -82,23 +82,30 @@ margin:0px;
 }
 .background2 img:nth-child(1){
 	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
 	
 }
 .background2 img:nth-child(2){
 	animation-delay: 6s;
+		-webkit-animation-delay: 6s;
+
 
 }
 .background2 img:nth-child(3){
 	animation-delay: 9s;
-	
+		-webkit-animation-delay: 9s;
+
 }
 .background2 img:nth-child(4){
 	animation-delay: 12s;
+		-webkit-animation-delay: 12s;
+
 	
 }
 .background2 img:nth-child(5){
 	animation-delay: 15s;
-	
+		-webkit-animation-delay: 15s;
+
 }
 
 
