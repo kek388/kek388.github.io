@@ -627,6 +627,14 @@ border-radius:50%;
 	color:yellow;
 	animation: sam 3s linear 0s forwards ;
 	animation-play-state:running;
+
+	-webkit-animation: sam 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes sam {
+     0% { width:2%;}
+	
+    100% { width:79%;  }
 }
 
 @keyframes sam {
@@ -651,7 +659,17 @@ border-radius:50%;
 	color:yellow;
 	animation: dm 3s linear 0s forwards ;
 	animation-play-state:running;
+
+	-webkit-animation: dm 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
 }
+
+@-webkit-keyframes dm {
+     0% { width:2%;}
+	
+    100% { width:75%;  }
+}
+
 
 @keyframes dm {
      0% { width:2%;}
@@ -675,6 +693,15 @@ border-radius:50%;
 	color:cyan;
 	animation: html 3s linear 0s forwards ;
 	animation-play-state:running;
+
+	-webkit-animation: html 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+
+@-webkit-keyframes html {
+     0% { width:2%;}
+	
+    100% { width:80%;  }
 }
 
 @keyframes html {
@@ -699,6 +726,14 @@ border-radius:50%;
 	color:cyan;
 	animation: css 3s linear 0s forwards ;
 	animation-play-state:running;
+
+	-webkit-animation: css 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes css {
+     0% { width:2%;}
+	
+    100% { width:85%;  }
 }
 
 @keyframes css {
@@ -722,6 +757,14 @@ border-radius:50%;
 	color:cyan;
 	animation: php 3s linear 0s forwards ;
 	animation-play-state:running;
+
+	-webkit-animation: php 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes php {
+     0% { width:2%;}
+	
+    100% { width:39%;  }
 }
 
 @keyframes php {
@@ -745,8 +788,14 @@ border-radius:50%;
 	color:cyan;
 	animation: js 3s linear 0s forwards ;
 	animation-play-state:running;
+	-webkit-animation: js 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
 }
-
+@-webkit-keyframes js {
+     0% { width:2%;}
+	
+    100% { width:34%;  }
+}
 @keyframes js {
      0% { width:2%;}
 	
@@ -768,8 +817,14 @@ border-radius:50%;
 	color:orangered;
 	animation: si 3s linear 0s forwards ;
 	animation-play-state:running;
+	-webkit-animation: si 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
 }
-
+@-webkit-keyframes si {
+     0% { width:2%;}
+	
+    100% { width:73%;  }
+}
 @keyframes si {
      0% { width:2%;}
 	
@@ -791,8 +846,14 @@ border-radius:50%;
 	color:orangered;
 	animation: fi 3s linear 0s forwards ;
 	animation-play-state:running;
+	-webkit-animation: fi 3s linear 0s forwards ;
+	-webkit-animation-play-state:running;
 }
-
+@-webkit-keyframes fi {
+     0% { width:2%;}
+	
+    100% { width:65%;  }
+}
 @keyframes fi {
      0% { width:2%;}
 	
