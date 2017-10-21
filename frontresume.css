@@ -1,4 +1,5 @@
 ul { 
+ height:10vh;	
  list-style-type:none;
  margin:0px;
  padding:0px;
@@ -48,9 +49,7 @@ li a:hover{
      }
 
 
-table{
-	height:1%;
-}
+
 
 .background1{
 	position:relative;
@@ -59,7 +58,7 @@ margin:0px;
 
 
 .background2 img {
-	height:94.8vh;
+	height:90vh;
 	position:absolute;
 	animation: show 18s linear infinite 0s forwards ;
 	animation-play-state:running;
