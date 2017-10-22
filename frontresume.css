@@ -76,8 +76,8 @@ margin:0px;
 @-webkit-keyframes show {
 	0% { visibility: visible;z-index:14; filter:brightness(40%) ;}
 	17% { visibility: visible;z-index:14; filter:brightness(140%) ;}
-	17.00001% { visibility: hidden;z-index:10;  }
-    100% { visibility: hidden;z-index:10;  }
+	17.00001% { visibility: hidden;z-index:9;  }
+    100% { visibility: hidden;z-index:9;  }
 	
 }
 
@@ -1198,7 +1198,7 @@ height:28px;
 }
 
 .footer1{
-z-index:15;	
+z-index:10;	
 text-align:center;
 background-color:black;
 color:white;
