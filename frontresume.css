@@ -604,16 +604,22 @@ border-radius:50%;
 	background-color:white;
 }
 
+.skillheight{
+	
+
+}
+
 .skillbg{
 	position:relative;
-	background-color:none;
 	width:100%;
+	height:1vh;
+
 	
 }
 
 .skilltitle{
 
-	top:10px;
+	margin-top:1%;
 	background-color:none;
 	font-size:68px;
 	text-align:center;
@@ -1087,6 +1093,8 @@ border-radius:50%;
 
 .aboutpic{
 	display:flex;
+		display:-webkit-flex;
+
 	margin:auto;
 	border-radius:50%;
 	width:288px;
@@ -1139,6 +1147,9 @@ border-radius:50%;
 	background-color:grey;
 	display: flex;
     justify-content:center;
+    display: -webkit-flex;
+    -webkit-justify-content:center;
+}
 }
 
 .test img{
@@ -1157,11 +1168,13 @@ border-radius:50%;
 }
 
 .wechat1{
-	visibility:visible;
+	visibility:hidden;
+
 }	  
 	   
 .wechat8{
 	margin-right:38px;
+	border-radius:18%;
 }	   
 .facebookicon{
 	margin-left:38px;
