@@ -1142,7 +1142,8 @@ border-radius:50%;
 }
 	 
 .test {
-	border:none;
+	position:relative;
+	bottom:1px;
 	width:100%;
 	background-color:grey;
 	display: flex;
