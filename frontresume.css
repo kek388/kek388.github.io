@@ -404,12 +404,16 @@ border-radius:50%;
 	animation-play-state:paused;
 	filter:brightness(50%);
 	transition: all 2s ;
+		-webkit-transition: all 2s ;
+
 }  
 
 .mywork:hover img{
 	animation-play-state:running;
 	-webkit-animation-play-state:running;
 	transform: scale(1.18);
+		-webkit-transform: scale(1.18);
+
 }
 
 @-webkit-keyframes showMe {
@@ -472,11 +476,14 @@ border-radius:50%;
 
 	filter:brightness(50%);
 	transition: all 2s ;
+		-webkit-transition: all 2s ;
+
 }  
 
 .myseminar:hover img{
 	animation-play-state:running;
 		-webkit-animation-play-state:running;
+	-webkit-transform: scale(1.18);
 
 	transform: scale(1.18);
 }
@@ -543,11 +550,14 @@ border-radius:50%;
 	-webkit-animation-play-state:paused;
 	filter:brightness(50%);
 	transition: all 2s ;
+	-webkit-transition: all 2s ;
 }  
 
 .mysseminar:hover img{
 	animation-play-state:running;
 		-webkit-animation-play-state:running;
+
+	-webkit-transform: scale(1.18);
 
 	transform: scale(1.18);
 }
