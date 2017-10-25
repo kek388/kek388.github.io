@@ -1,56 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head >
-  
+     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#mypic").removeClass("d-block") ;
+        $(this).hide();
+        $("#mypic").hide();
+    });
+});
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $img = $('.play');
+
+function resize() {
+    if ($window.height() < 495.8) {
+        $img.removeClass("play");
+        $img.addClass("resizeh");
+    } 
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $img = $('.resizeh');
+
+function resize() {
+    if ($window.height() > 495.8) {
+        $img.removeClass("resizeh");
+        $img.addClass("play");
+    } 
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $img = $('.mypic');
+
+function resize() {
+    if ($window.width() < 390) {
+        $img.removeClass("mypic");
+        $img.addClass("changemypic");
+    } 
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $img = $('.changemypic');
+
+function resize() {
+    if ($window.width() > 390) {
+        $img.removeClass("changemypic");
+        $img.addClass("mypic");
+    } 
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+</script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="frontresume.css">
 </head>
 
 <body>
-   
-     <table>
-      <ul>
-<li style="float:left"><a class="kekjiahuei" href="index.html"><b>KEK JIA HUEI</b><span><img src="cname.png" alt="cname" height="80px" width="300px"></span></a></li>
 
-       <li><a href="about.html#contact">Contact</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="myeducation.html">My Education</a></li>
-       <li><a href="myskill.html">My Skill</a></li>
-       <li><a href="myhistory.html">My History</a></li>
+
+
+
+   
+<nav class="navbar navbar-expand-lg navbar-light ">
+
+
+      
+<a class="navbar-brand kekjiahuei" href="index.html"><b>KEK JIA HUEI</b></a>
+
+<button id="hidepic" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+
+
+    <ul class="navbar-nav">
+           <li class="nav-item"><a class="nav-link" href="myhistory.html">History</a></li>
+       <li class="nav-item"><a class="nav-link" href="myskill.html">Skill</a></li>
+       <li class="nav-item"><a class="nav-link" href="myeducation.html">Education</a></li>
+       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+       <li class="nav-item active"><a class="nav-link" href="about.html#contact">Contact</a></li>
       </ul>
 
-</table>
 
-<div class="background1">
+
+ </div>
+
+</nav>
+
+
+
       
 
+
+
+
      <div class="background2">
-         <img src="b5.jpg" alt="skyearth" width="100%">
-          <img src="bb4.jpg" alt="skyearth" width="100%" >
-         <img src="b3.jpg" alt="skyearth" width="100%" >
-       <img src="b2.jpeg" alt="skyearth" width="100%" >
-       <img src="b1.jpg" alt="skyearth" width="100%">    
-      <img src="k1.jpg" alt="skyearth" width="100%" >
+
+ <img id="mypic" class="mypic align-bottom rounded mx-auto d-block" src="kekp1.jpg" alt="mypic" >    
+
+         <img  id="imgb" class="play" src="b5.jpg" alt="skyearth" width="100%">
+          <img id="imgb" class="play" src="bb4.jpg" alt="skyearth" width="100%" >
+         <img id="imgb" class="play" src="b3.jpg" alt="skyearth" width="100%" >
+       <img id="imgb" class="play" src="b2.jpeg" alt="skyearth" width="100%" >
+       <img id="imgb" class="play" src="b1.jpg" alt="skyearth" width="100%">    
+      <img id="imgb" class="play" src="k1.jpg" alt="skyearth" width="100%" >
+
+       
+
+
+<div class="mx-auto welcome">
+  Hi, I'm KEK <br>
+  Welcome to my website
+</div>
+
+
+
+<div class="mx-auto foot1">
+
+Copyright &copy JiaHuei KEK 2017
+</div>
+
+
+
      </div>
 
   
        
-
        
 
-       <div>
-        <img class="mypic" src="kekp1.jpg" alt="mypic" width="270px" height="270px">    
-       </div>
-       <div class="text1">Hi! I'm KEK! <br>
-                      Welcome to my portfolio!! </div>
-   
-  <div class="footer" width=100%>
-
-     <p>Copyright &copy JiaHuei KEK 2017</p>
        
-  </div></div>
+     
 
 
    
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
 
 </body>
 
