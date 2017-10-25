@@ -113,7 +113,7 @@ li a:hover{
 
 .resizeh{
 	top:0.00001px;
-	height:508.8px;
+	height:588.8px;
 	position:absolute;
 	animation: show 18s linear infinite 0s forwards ;
 	animation-play-state:running;
@@ -170,9 +170,9 @@ li a:hover{
 
 
 .changemypic {
-	width:168.8px;
-	 height:168.8px;
-	top:48px;
+	width:68%;
+	 height:238px;
+	margin-top:24.8%   ;
 	    overflow: hidden;
     list-style-type: none;
 
@@ -200,7 +200,23 @@ border-radius:50% !important;
 	z-index:15;
 	position:relative;
 	top:63.8px;
-    width:38.8%;
+    width:51.8%;
+    opacity:0.68;
+	font-size:18px;
+	color:darkcyan;
+	font-weight:bold;
+	border-radius:5px;
+	text-align:center;
+
+
+}
+
+.welcome1{
+	background-color:white;
+	z-index:15;
+	position:relative;
+	margin-top:8%;
+    width:68.8%;
     opacity:0.68;
 	font-size:18px;
 	color:darkcyan;
@@ -215,8 +231,9 @@ border-radius:50% !important;
 	color:white;
 	z-index:15;
 	position:relative;
-top:88px;
+	margin-top:18%;
 			text-align:center;
+			width:68%;
 
 
 }
@@ -224,7 +241,7 @@ top:88px;
 .text2{
 	z-index:10;
 	position:absolute;
-	font-size:25px;
+	font-size:18px;
 	color:green;
 	top:360px;
 	left:30px;

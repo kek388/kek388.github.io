@@ -19,10 +19,10 @@ var $window = $(window),
     $img = $('.play');
 
 function resize() {
-    if ($window.height() < 495.8) {
+    if ($window.height() < 588.8) {
         $img.removeClass("play");
         $img.addClass("resizeh");
-    } else if ($window.height() > 495.8) {
+    } else if ($window.height() > 588.8) {
             $img.removeClass("resizeh");
         $img.addClass("play");
         }
@@ -49,6 +49,25 @@ function resize() {
     } else if ($window.width() > 390) {
             $img2.removeClass("changemypic");
         $img2.addClass("mypic");
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $welword = $('#welcome');
+
+function resize() {
+    if ($window.width() < 390) {
+        $welword.removeClass("welcome");
+        $welword.addClass("welcome1");
+    } else if ($window.width() > 390) {
+            $welword.removeClass("welcome1");
+        $welword.addClass("welcome");
         }
 }
 
@@ -121,7 +140,7 @@ function resize() {
        
 
 
-<div class="mx-auto welcome">
+<div id="welcome" class="mx-auto welcome">
   Hi, I'm KEK <br>
   Welcome to my website
 </div>
