@@ -22,25 +22,10 @@ function resize() {
     if ($window.height() < 495.8) {
         $img.removeClass("play");
         $img.addClass("resizeh");
-    } 
-}
-
- $window.resize(resize)
-        .trigger('resize');
-});
-
-
-
-jQuery(function ($) {
-
-var $window = $(window),
-    $img = $('.resizeh');
-
-function resize() {
-    if ($window.height() > 495.8) {
-        $img.removeClass("resizeh");
+    } else if ($window.height() > 495.8) {
+            $img.removeClass("resizeh");
         $img.addClass("play");
-    } 
+        }
 }
 
  $window.resize(resize)
@@ -48,15 +33,19 @@ function resize() {
 });
 
 
+
+
+
+
 jQuery(function ($) {
 
 var $window = $(window),
-    $img = $('.mypic');
+    $img2 = $('.mypic');
 
 function resize() {
     if ($window.width() < 390) {
-        $img.removeClass("mypic");
-        $img.addClass("changemypic");
+        $img2.removeClass("mypic");
+        $img2.addClass("changemypic");
     } 
 }
 
@@ -68,12 +57,12 @@ function resize() {
 jQuery(function ($) {
 
 var $window = $(window),
-    $img = $('.changemypic');
+    $img3 = $('.changemypic');
 
 function resize() {
     if ($window.width() > 390) {
-        $img.removeClass("changemypic");
-        $img.addClass("mypic");
+        $img3.removeClass("changemypic");
+        $img3.addClass("mypic");
     } 
 }
 
@@ -109,11 +98,11 @@ function resize() {
 
 
     <ul class="navbar-nav">
-           <li class="nav-item"><a class="nav-link" href="myhistory.html">History</a></li>
-       <li class="nav-item"><a class="nav-link" href="myskill.html">Skill</a></li>
-       <li class="nav-item"><a class="nav-link" href="myeducation.html">Education</a></li>
-       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
        <li class="nav-item active"><a class="nav-link" href="about.html#contact">Contact</a></li>
+       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+       <li class="nav-item"><a class="nav-link" href="myeducation.html">Education</a></li>
+       <li class="nav-item"><a class="nav-link" href="myskill.html">Skill</a></li>
+       <li class="nav-item"><a class="nav-link" href="myhistory.html">History</a></li>
       </ul>
 
 
