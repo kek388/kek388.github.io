@@ -40,13 +40,16 @@ function resize() {
 jQuery(function ($) {
 
 var $window = $(window),
-    $img2 = $('.mypic');
+    $img2 = $('#mypic');
 
 function resize() {
     if ($window.width() < 390) {
         $img2.removeClass("mypic");
         $img2.addClass("changemypic");
-    } 
+    } else if ($window.width() > 390) {
+            $img2.removeClass("changemypic");
+        $img2.addClass("mypic");
+        }
 }
 
  $window.resize(resize)
@@ -54,21 +57,7 @@ function resize() {
 });
 
 
-jQuery(function ($) {
 
-var $window = $(window),
-    $img3 = $('.changemypic');
-
-function resize() {
-    if ($window.width() > 390) {
-        $img3.removeClass("changemypic");
-        $img3.addClass("mypic");
-    } 
-}
-
- $window.resize(resize)
-        .trigger('resize');
-});
 
 </script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
