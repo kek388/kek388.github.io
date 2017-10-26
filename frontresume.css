@@ -37,7 +37,6 @@
 
 ul { 	
 z-index:19;
-		float:left;
  list-style-type:none;
  margin:0px;
  padding:0px;
@@ -47,7 +46,6 @@ z-index:19;
  body{ margin :0px;}
 
 li{
-	float:right;
 }
 
 li a{
