@@ -14,20 +14,14 @@
 }
 
 
-.navbar-nav1{
+.navbar-nav{
 	position:relative;
 	background-color:white;
 	opacity:0.5;
 	z-index:19;
 }
 
-.navbar-navv{
-	width:100% !important;
-	position:relative;
-	background-color:white;
-	opacity:0.5;
-	z-index:19;
-}
+
 
 .nav-item{
 	;

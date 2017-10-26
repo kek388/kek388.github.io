@@ -81,25 +81,6 @@ function resize() {
         .trigger('resize');
 });
 
-jQuery(function ($) {
-
-var $window = $(window),
-    $menubar = $('#menubar');
-
-function resize() {
-    if ($window.width() < 975) {
-        $menubar.removeClass("navbar-nav1");
-        $menubar.addClass("navbar-navv");
-    } else if ($window.width() > 975) {
-            $menubar.removeClass("navbar-navv");
-        $menubar.addClass("navbar-nav1");
-        }
-}
-
- $window.resize(resize)
-        .trigger('resize');
-});
-
 
 
 </script>
@@ -126,12 +107,13 @@ function resize() {
 
 
 
-    <ul id="menubar" class="navbar-nav ml-auto navbar-nav1">
-       <li class="nav-item active"><a class="nav-link" href="about.html#contact">Contact</a></li>
-       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-       <li class="nav-item"><a class="nav-link" href="myeducation.html">Education</a></li>
+    <ul id="menubar" class="navbar-nav ml-auto">
+           <li class="nav-item"><a class="nav-link" href="myhistory.html">History</a></li>
        <li class="nav-item"><a class="nav-link" href="myskill.html">Skill</a></li>
-       <li class="nav-item"><a class="nav-link" href="myhistory.html">History</a></li>
+       <li class="nav-item"><a class="nav-link" href="myeducation.html">Education</a></li>
+       <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+       <li class="nav-item active"><a class="nav-link" href="about.html#contact">Contact</a></li>
       </ul>
 
 
