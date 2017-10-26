@@ -10,6 +10,28 @@
   <link rel="stylesheet" type="text/css" href="frontresume.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $myc = $('#mypic');
+
+function resize() {
+    if ($window.width() > 888.8) {
+        $myc.addClass("d-block");
+                $myc.show();
+
+    } 
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+
 $(document).ready(function(){
     $("button").click(function(){
         $("#mypic").removeClass("d-block") ;
@@ -17,6 +39,9 @@ $(document).ready(function(){
         $("#mypic").hide();
     });
 });
+
+
+
 
 
 jQuery(function ($) {
