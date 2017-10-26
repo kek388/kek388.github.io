@@ -14,9 +14,15 @@
 }
 
 
-.navbar-nav{
-	float:right !important;
-	width:100%;
+.navbar-nav1{
+	position:relative;
+	background-color:white;
+	opacity:0.5;
+	z-index:19;
+}
+
+.navbar-navv{
+	width:100% !important;
 	position:relative;
 	background-color:white;
 	opacity:0.5;
@@ -70,7 +76,6 @@ li a:hover{
 	position:relative;
 	color:darkcyan !important;
 	font-size:26.18px;
-	width:68%;
 	z-index:19;
 	background-color:none;
 	height:48.8px;
