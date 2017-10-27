@@ -1,83 +1,340 @@
 <!DOCTYPE html>
-<html>
-<head >
-  
-  <link rel="stylesheet" type="text/css" href="style1.css">
-</head>
+<html lang="en">
+  <head>
+    <title>history page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body class="nomargin">
-   
-   <header>
-    
-      <ul>
-       <li style="float:left"><a class="kekjiahuei" href="index.html"><b>KEK JIA HUEI</b><span><img src="cname.png" alt="cname" height="80px" width="300px"></span></a></li>
-       <li><a href="about.html#contact">Contact</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="myeducation.html">My Education</a></li>
-       <li><a href="myskill.html">My Skill</a></li>
-       <li><a class="activepage">My History</a></li>
-      </ul> 
-      
-    </header>
-  <div class="historybackground">
-   
-    <div class="historyword">Welcome to my journey!</div>
-      <div class="childhood">
-        My Childhood ( 30JANUARY1992 - 31DECEMBER2004 ) <br>
-        
-        <img class="ch1" src="111.jpg" alt="ch1" width=22% height="300px" >
-         <img class="ch2" src="bk1.jpg" alt="ch2" width=8% height="300px" >
-          <img class="ch3" src="t2.jpg" alt="ch3" width=8% height="300px" >
-           <img class="ch4" src="t3.jpg" alt="ch4" width=8% height="300px" >
-        </div>
-    <div class="teenage">
-      My Teenage Days ( 1JANUARY2005 - 31DECEMBER2011 )<br>
-       <img class="ch1" src="t1.jpg" alt="cht1" width=22% height="300px" >
-         <img class="ch2" src="t4.jpg" alt="cht2" width=8% height="300px" >
-          <img class="ch3" src="t5.jpg" alt="cht3" width=8% height="300px" >
-           <img class="ch4" src="t6.jpg" alt="cht4" width=8% height="300px" >
-        </div>
-      
-      <div class="mywork"> 
-       My Working Environment ( 1JANUARY2012 - PRESENT )<br>
-       <img class="w1" src="t1.jpg" alt="wch1" height="450px" >
-         <img class="w2" src="t4.jpg" alt="wch2"  height="450px" >
-          <img class="w3" src="t5.jpg" alt="wch3"  height="450px" >
-           <img class="w4" src="t6.jpg" alt="wch4"  height="450px" >
-        </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="stylehistory.css">
 
-        <div class="myseminar"> 
-       Attend MILIONAIRE INVESTOR PROGRAM RM5000+( 18NOVERMBER2012 - 19NOVEMBER2012 )  <br>
-       <img class="s1" src="mip2.jpg" alt="s1"  height="450px" >
-         <img class="s2" src="mip3.jpg" alt="s2"  height="450px" >
-          <img class="s3" src="mip4.jpg" alt="s3"  height="450px" >
-           <img class="s4" src="mip1.jpg" alt="s4"  height="450px" >
-        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-       <div class="seminar2">
-        Attend MONEY MASTERY BOOT CAMP RM4000+( 8JUNE2013 - 10JUNE2013 )  <br>
-        <div class="mysseminar"> 
-       <img class="s1" src="mmp2.jpg" alt="s1"  height="450px" >
-         <img class="s2" src="mmp3.jpg" alt="s2"  height="450px" >
-          <img class="s3" src="mmp4.jpg" alt="s3"  height="450px" >
-           <img class="s4" src="mmp5.jpg" alt="s4"  height="450px" >
-           <img class="s4" src="mmp6.jpg" alt="s4"  height="450px" >
-           <img class="s4" src="mmp1.jpg" alt="s4"  height="450px" >
-        </div>
-        </div>
+<script>
+jQuery(function ($) {
 
-        
+var $window = $(window),
+    $imgcover = $('#imgcover');
+    $imgseminar = $('.imgseminar')
+
+function resize() {
+    if ($window.width() < 750) {
+        $imgcover.removeClass("imgcover");
+          $imgseminar.removeClass("imgseminar");
+            $imgseminar.addClass("imgseminar1");
 
 
+    } else if ($window.width() > 750) {
+        $imgcover.addClass("imgcover");
+          $imgseminar.addClass("imgseminar");
+            $imgseminar.removeClass("imgseminar1");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $hisbtn = $('.hisbtn');
+
+function resize() {
+    if ($window.width() < 975) {
+        $hisbtn.removeClass("hisbtn");
+            $hisbtn.addClass("hisbtn1");
+
+
+    } else if ($window.width() > 975) {
+        $hisbtn.addClass("hisbtn");
+          $hisbtn.addClass("hisbtn1");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+
+
+
+function showImage(imgName) {
+    document.getElementById('largeImg').src = imgName;
+    showLargeImagePanel();
+    unselectAll();
+}
+function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
+}
+function unselectAll() {
+    if(document.selection) document.selection.empty();
+    if(window.getSelection) window.getSelection().removeAllRanges();
+}
+function hideMe(obj) {
+    obj.style.visibility = 'hidden';
+}
+
+
+
+</script>
+  </head>
+  <body>
+
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+   <a class="navbar-brand" style="color:white;" href="index.html">KEK JIA HUEI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ml-auto bg-primary" >
+      <li class="nav-item active ">
+        <a class="nav-link text-primary hisbtn" href="myhistory.html">History </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="myskill.html">Skill</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="myeducation.html">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="about.html#contact">Contact</a>
+      </li>
+    </ul>
   </div>
+ </nav>
+ <div class="row">
+  <div class="col-sm-12 cimg">
+<img id="imgcover" src="tpositive.jpg" class="imgcover" alt="Responsive image" width=100%>
+  </div>
+ </div>
+</div>
 
-<div class="footer1" width=100%>
 
-     <p><br>Copyright &copy JiaHuei KEK 2017</p></div>
+<div class="container">
 
-</body>
+<p class="text-center">
+<br>On 3rd January 2012, I started my journey working in Hua Hua Stationeries Co as sales and marketing executive.<br>
+  (January 2012 - PRESENT)      
+</p>
+<div class="row">
+   <div class="col-md-6">
+      <img src="b11.jpg" alt="wor1" width=100% 
+      style="cursor:pointer" onclick="showImage('./mip3.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+   </div>
+
+  <div class="col-md-6">
+      <img src="b11.jpg" alt="work1" width=100%>
+      <p class="text-center">try</p>
+
+   </div>
+
+  <div class="col-md-6">
+      <img src="b11.jpg" alt="work1" width=100%>
+      <p class="text-center">try</p>
+
+   </div>
+ 
+  <div class="col-md-6">
+      <img src="b11.jpg" alt="work1" width=100%>
+      <p class="text-center">try</p>
+
+   </div>
+
+</div>
+</div>
 
 
+
+
+<div class="container">
+
+<p class="text-center">
+<br>Attend <a href="#">MILIONAIRE INVESTOR PROGRAM</a> RM5000+ to learn about stock investment<br>
+(18NOVERMBER2012 - 19NOVEMBER2012)
+</p>
+<div class="row">
+   <div class="col-md-12 text-center">
+      <img src="mip1.jpg" id="imgseminar" alt="wor1" class="imgseminar"
+      style="cursor:pointer" onclick="showImage('./mip1.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+   </div>
+
+  <div class="col-md-4">
+      <img src="mip2.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mip2.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+  <div class="col-md-4">
+      <img src="mip3.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mip3.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+ 
+  <div class="col-md-4">
+      <img src="mip4.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mip4.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+</div>
+</div>
+
+
+
+<div class="container">
+
+<p class="text-center">
+<br>Attend <a href="#">MONEY MASTERY BOOT CAMP</a> RM4000+ to learn about how to create multiples souces of incomes<br>
+(8JUNE2013 - 10JUNE2013)
+</p>
+<div class="row">
+   <div class="col-md-12 text-center">
+      <img src="mmp1.jpg" id="imgseminar" alt="wor1" class="imgseminar"
+      style="cursor:pointer" onclick="showImage('./mmp1.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+   </div>
+
+  <div class="col-md-6">
+      <img src="mmp2.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mmp2.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+  <div class="col-md-6
+  ">
+      <img src="mmp3.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mmp3.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+ 
+  <div class="col-md-4">
+      <img src="mmp4.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mmp4.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+    <div class="col-md-4">
+      <img src="mmp5.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mmp5.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+    <div class="col-md-4">
+      <img src="mmp6.jpg" alt="work1" width=100%
+      style="cursor:pointer" onclick="showImage('./mmp6.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+      <p class="text-center">try</p>
+
+   </div>
+
+</div>
+</div>
+
+
+
+
+<div class="container">
+ <div class="row">
+  <div class="col-md-12">
+    <p class="text-center bg-dark" style="color:white">Copyright &copy JiaHuei KEK 2017
+</p>
+
+
+  
+  </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-
