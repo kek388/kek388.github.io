@@ -1,0 +1,611 @@
+.navbg{
+	background-color:lawngreen;
+}
+
+.skbtn{
+	background-color:white;
+	color:lawngreen !important;
+	border-radius:18%;
+}
+.skbtn1{
+	background-color:white;
+	color:lawngreen !important;
+}
+
+
+.skhover:hover{
+	background-color:white;
+	color:lawngreen !important;
+		border-radius:18%;
+		opacity:0.68;
+
+
+}
+
+.skhover1:hover{
+	background-color:white;
+	color:lawngreen !important;
+		opacity:0.68;
+}
+
+.csk{
+	height:348px
+}
+
+.marketing{
+	border:2.8px solid red;
+}
+.marktext{
+	font-size:28.8px;
+	color:white;
+	animation: marktext 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: marktext 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;	
+
+}
+@-webkit-keyframes marktext {
+     0% { background-color:red;}
+     25% { background-color:orangered;}
+    50% { background-color:orange;  }	
+    75% { background-color:crimson;  }	
+    100% { background-color:tomato;  }
+}
+
+@keyframes marktext {
+     0% { background-color:red;}
+     25% { background-color:orangered;}
+    50% { background-color:orange;  }	
+    75% { background-color:crimson;  }	
+    100% { background-color:tomato;  }
+}
+
+.samword{
+	color:tomato;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.samani{
+	border:3px solid red;
+    color:orangered;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.mani{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:orangered;
+	width:2%;
+	color:orangered;
+	animation: mani 6.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: mani 6.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes mani {
+     0% { width:10%;}
+	
+    100% { width:78%;  }
+}
+
+@keyframes mani {
+     0% { width:10%;}
+	
+    100% { width:78%;  }
+}
+
+.samper{
+	font-size:18px;
+	color:red;
+	font-weight:bold;
+}
+
+
+.dmword{
+	color:tomato;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.dmmani{
+	border:3px solid red;
+    color:orangered;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.dmani{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:orangered;
+	width:2%;
+	color:orangered;
+	animation: dmani 6.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: dmani 6.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes dmani {
+     0% { width:10%;}
+	
+    100% { width:68%;  }
+}
+
+@keyframes dmani {
+     0% { width:10%;}
+	
+    100% { width:68%;  }
+}
+
+.dmmper{
+	font-size:18px;
+	color:red;
+	font-weight:bold;
+
+}
+
+
+.investment{
+	border:2.8px solid lawngreen;
+}
+.investtext{
+	font-size:28.8px;
+	color:white;
+	animation: investtext 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: investtext 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;	
+
+}
+@-webkit-keyframes investtext {
+     0% { background-color:teal;}
+     25% { background-color:limegreen;}
+    50% { background-color:green;  }	
+    75% { background-color:seagreen;  }	
+    100% { background-color:greenyellow;  }
+}
+
+@keyframes investtext {
+     0% { background-color:teal;}
+     25% { background-color:limegreen;}
+    50% { background-color:green;  }	
+    75% { background-color:seagreen;  }	
+    100% { background-color:greenyellow;  }
+}
+
+.siword{
+	color:teal;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.siani{
+	border:3px solid springgreen;
+    color:lime;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.sibani{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:lime;
+	width:10%;
+	color:lime;
+	animation: sibani 18.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: sibani 18.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes sibani {
+     0% { width:10%;}
+	
+    100% { width:73%;  }
+}
+
+@keyframes sibani {
+     0% { width:10%;}
+	
+    100% { width:73%;  }
+}
+
+.siper{
+	font-size:18px;
+	color:seagreen;
+	font-weight:bold;
+}
+
+
+.fiword{
+	color:teal;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.fiani{
+	border:3px solid springgreen;
+    color:lime;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.fibani{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:lime;
+	width:10%;
+	color:lime;
+	animation: fibani 18.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: fibani 18.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes fibani {
+     0% { width:10%;}
+	
+    100% { width:65%;  }
+}
+
+@keyframes fibani {
+     0% { width:10%;}
+	
+    100% { width:65%;  }
+}
+
+.fiper{
+	font-size:18px;
+	color:seagreen;
+	font-weight:bold;
+
+}
+
+
+
+.programming{
+	border:2.8px solid royalblue;
+}
+.programmingt{
+	font-size:28.8px;
+	color:white;
+	animation: programmingt 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: programmingt 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;	
+
+}
+@-webkit-keyframes programmingt {
+     0% { background-color:#6495ED;}
+     25% { background-color:darkcyan;}
+    50% { background-color:blue;  }	
+    75% { background-color:#87CEEB;  }	
+    100% { background-color:#4682B4;  }
+}
+
+@keyframes programmingt {
+     0% { background-color:#6495ED ;}
+     25% { background-color:darkcyan;}
+    50% { background-color:blue;  }	
+    75% { background-color:#00BFFF;  }	
+    100% { background-color:#4682B4;  }
+}
+
+
+.htmlw{
+	color:deepskyblue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.htmla{
+	border:3px solid DarkTurquoise ;
+    color:dodgerblue;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.htmlb{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:dodgerblue;
+	width:10%;
+	color:dodgerblue;
+	animation: htmlb 28.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: htmlb 28.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes htmlb {
+     0% { width:10%;}
+	
+    100% { width:80%;  }
+}
+
+@keyframes htmlb {
+     0% { width:10%;}
+	
+    100% { width:80%;  }
+}
+
+.htmlp{
+	font-size:18px;
+	color:blue;
+	font-weight:bold;
+
+}
+
+
+
+.cssw{
+	color:deepskyblue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.cssa{
+	border:3px solid DarkTurquoise ;
+    color:dodgerblue;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.cssb{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:dodgerblue;
+	width:10%;
+	color:dodgerblue;
+	animation: cssb 28.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: cssb 28.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes cssb {
+     0% { width:10%;}
+	
+    100% { width:88%;  }
+}
+
+@keyframes cssb {
+     0% { width:10%;}
+	
+    100% { width:88%;  }
+}
+
+.cssp{
+	font-size:18px;
+	color:blue;
+	font-weight:bold;
+
+}
+
+
+
+.jvsw{
+	color:deepskyblue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.jvsa{
+	border:3px solid DarkTurquoise ;
+    color:dodgerblue;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.jvsb{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:dodgerblue;
+	width:10%;
+	color:dodgerblue;
+	animation: jvsb 28.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: jvsb 28.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes jvsb {
+     0% { width:10%;}
+	
+    100% { width:48%;  }
+}
+
+@keyframes jvsb {
+     0% { width:10%;}
+	
+    100% { width:48%;  }
+}
+
+.jvsp{
+	font-size:18px;
+	color:blue;
+	font-weight:bold;
+
+}
+
+
+
+.jqw{
+	color:deepskyblue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.jqa{
+	border:3px solid DarkTurquoise ;
+    color:dodgerblue;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.jqb{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:dodgerblue;
+	width:10%;
+	color:dodgerblue;
+	animation: jqb 28.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: jqb 28.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes jqb {
+     0% { width:10%;}
+	
+    100% { width:49%;  }
+}
+
+@keyframes jqb {
+     0% { width:10%;}
+	
+    100% { width:49%;  }
+}
+
+.jqp{
+	font-size:18px;
+	color:blue;
+	font-weight:bold;
+
+}
+
+
+.phpw{
+	color:deepskyblue;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+.phpa{
+	border:3px solid DarkTurquoise ;
+    color:dodgerblue;
+    position:relative;
+    left:10px;
+    padding:none;
+    font-size:18px;
+
+}
+
+.phpb{
+    font-size:18px;
+	left:0.00001px;
+	position:absolute;
+	background-color:dodgerblue;
+	width:10%;
+	color:dodgerblue;
+	animation: phpb 28.8s linear 0s forwards ;
+	animation-play-state:running;
+
+	-webkit-animation: phpb 28.8s linear 0s forwards ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes phpb {
+     0% { width:10%;}
+	
+    100% { width:46%;  }
+}
+
+@keyframes phpb {
+     0% { width:10%;}
+	
+    100% { width:46%;  }
+}
+
+.phpp{
+	font-size:18px;
+	color:blue;
+	font-weight:bold;
+
+}
+
+.skillcode{
+	background-color:dodgerblue;
+	color:white;
+	font-size:28px;
+	animation: skillcode 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: skillcode 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes skillcode {
+     0% { background-color:red;}
+     1% { background-color:orange;}
+     32% { background-color:yellow;}
+     49% { background-color:green;}
+     64% { background-color:blue;}
+     83% { background-color:violet;}
+     100% { background-color:purple;}
+	}
+
+@keyframes skillcode {
+     0% { background-color:orangered;}
+     1% { background-color:orange;}
+     32% { background-color:gold;}
+     49% { background-color:lawngreen;}
+     64% { background-color:Cornflowerblue;}
+     83% { background-color:indigo;}
+     100% { background-color:violet;}
+	}	

@@ -1,78 +1,222 @@
 <!DOCTYPE html>
-<html>
-<head >
-  
-  <link rel="stylesheet" type="text/css" href="style1.css">
-</head>
+<html lang="en">
+  <head>
+    <title>skill page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body class="bgs1">
-   
-   <header>
-    
-      <ul>
-       <li style="float:left"><a class="kekjiahuei" href="index.html"><b>KEK JIA HUEI</b><span><img src="cname.png" alt="cname" height="80px" width="300px"></span></a></li>
-       <li><a href="about.html#contact">Contact</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="myeducation.html">My Education</a></li>
-       <li><a href="myskill.html" class="activepage">My Skill</a></li>
-       <li><a href="myhistory.html">My History</a></li>
-      </ul>
-       
-    </header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styleskill.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
- <div class="skillheight">
+    <script>
+    jQuery(function ($) {
 
-    <div class="skillbg"><br>
-          <div class="skilltitle">MY SKILL SET</div>
-      
-      <div class="marketlist">
-       MARKETING
-        <div class="marketlist1">Sales and Marketing<br>
-                Digital Marketing
-                </div>
-        </div>
-        <div class="program">PROGRAMMING
-         <div class="program1">HTML/HTML5<br>CSS/CSS3<br>PHP<br>JAVASCRIPT
-         </div></div>
-         <div class="invest">INVESTMENT
-         <div class="invest1">Stock Investment<br>Forex Investment
-         </div></div>
-      
-        <div class="sam"><div class="samr">e</div></div>
-          <div class="dm"><div class="dmr">e</div></div>
-            <div class="html"><div class="htmlr">e</div></div>
-              <div class="css"><div class="cssr">e</div></div>
-                <div class="php"><div class="phpr">e</div></div>
-                  <div class="js"><div class="jsr">e</div></div>
-                    <div class="si"><div class="sir">e</div></div>
-                      <div class="fi"><div class="fir">e</div></div>
-                      <div class="nsam">79%</div>
-                       <div class="ndm">75%</div>
-                        <div class="nhtml">80%</div>
- <div class="ncss">85%</div>
- <div class="nphp">39%</div>
- <div class="njs">34%</div>
- <div class="nsi">73%</div>
- <div class="nfi">65%</div>
+var $window = $(window),
+    $skhover = $('.skhover');
+    $skbtn = $('.skbtn');
 
 
 
+function resize() {
+    if ($window.width() < 991.8) {
+        $skhover.removeClass("skhover");
+            $skhover.addClass("skhover1");
+        $skbtn.removeClass("skbtn");
+            $skbtn.addClass("skbtn1");
+
+
+    } else if ($window.width() > 991.8) {
+        $skhover.addClass("skhover");
+          $skhover.removeClass("skhover1");
+        $skbtn.addClass("skbtn");
+      $skbtn.removeClass("skbtn1");          
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $csk = $('.csk');
+
+function resize() {
+    if ($window.width() < 750) {
+        $csk.removeClass("csk");
+
+
+    } else if ($window.width() > 750) {
+        $csk.addClass("csk");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
 
 
 
 
 
+    </script>
+ </head>
+ 
+ <body>
+ 
+ 
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light navbg">
+   <a class="navbar-brand navbg skhover" style="color:#20B2AA" href="index.html">KEK JIA HUEI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      </div>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ml-auto " >
+      <li class="nav-item active ">
+        <a class="nav-link text-white skhover" href="myhistory.html">History </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link skbtn" href="myskill.html">Skill</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white skhover" href="myeducation.html">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white skhover" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white skhover" href="about.html#contact">Contact</a>
+      </li>
+    </ul>
+  </div> 
+ </nav>
+ 
+ 
+ <div class="row">
+  <div class="col-sm-12 ">
+<img id="imgcover" src="skillcover.jpg" class="csk" alt="Responsive image" width=100%>
+  </div>
+ </div>
 </div>
-    
+
+ 
+ 
+ 
+ 
+<div class="container marketing">
+   <p class="text-center marktext" >MARKETING</p>
+
+   <p class="text-left samword">Sales & Marketing</p>
+   <div class="row">
+    <div class="col-9 samani"><div class="mani text-left">i</div>i</div>
+    <div class="col-3 text-center samper"><span class="count1">78</span><span>%</span></div>
+   </div> 
+<pre></pre>
+
+   <p class="text-left dmword">Digital Marketing</p>
+   <div class="row">
+    <div class="col-9 dmmani"><div class="dmani text-left">i</div>i</div>
+    <div class="col-3 text-center dmmper"><span class="count1">68</span><span>%</span></div>
+   </div> 
+
+   <pre></pre>
+</div>
+ 
+ <pre></pre>
+ <pre></pre>
+
+ <div class="container investment">
+   <p class="text-center investtext">INVESTMENT</p>
+
+   <p class="text-left siword">Stock Investment</p>
+   <div class="row">
+    <div class="col-9 siani"><div class="sibani text-left">i</div>i</div>
+    <div class="col-3 text-center siper"><span class="count2">73</span><span>%</span></div>
+   </div> 
+<pre></pre>
+
+   <p class="text-left fiword">Forex Investment</p>
+   <div class="row">
+    <div class="col-9 fiani"><div class="fibani text-left">i</div>i</div>
+    <div class="col-3 text-center fiper"><span class="count2">65</span><span>%</span></div>
+
+   </div> 
+   <pre></pre>
+   <pre></pre>
+
+</div>
+   <pre></pre>
+   <pre></pre>
 
 
+<div class="container programming">
+   <p class="text-center programmingt">PROGRAMMING</p>
+
+   <p class="text-left htmlw">HTML/HTML5</p>
+   <div class="row">
+    <div class="col-9 htmla"><div class="htmlb text-left">i</div>i</div>
+    <div class="col-3 text-center htmlp"><span class="count3">80</span><span>%</span></div>
+   </div> 
+<pre></pre>
+
+   <p class="text-left cssw">CSS/CSS3</p>
+   <div class="row">
+    <div class="col-9 cssa"><div class="cssb text-left">i</div>i</div>
+    <div class="col-3 text-center cssp"><span class="count3">88</span><span>%</span></div>
+   </div> 
+
+   <pre></pre>
+
+   <p class="text-left jvsw">JAVASCRIPT</p>
+   <div class="row">
+    <div class="col-9 jvsa"><div class="jvsb text-left">i</div>i</div>
+    <div class="col-3 text-center jvsp"><span class="count3">48</span><span>%</span></div>
+   </div> 
+<pre></pre>
+
+   <p class="text-left jqw">JQUERY</p>
+   <div class="row">
+    <div class="col-9 jqa"><div class="jqb text-left">i</div>i</div>
+    <div class="col-3 text-center jqp"><span class="count3">49</span><span>%</span></div>
+   </div> 
+
+   <pre></pre>
+
+     <p class="text-left phpw">PHP</p>
+   <div class="row">
+    <div class="col-9 phpa"><div class="phpb text-left">i</div>i</div>
+    <div class="col-3 text-center phpp"><span class="count3">46</span><span>%</span></div>
+   </div> 
+
+   <pre></pre>
+</div>
+ 
+<div class="container">
+  <p class="text-center"><br><br><span class="skillcode"> Written and Coded by Jia Huei KEK </span></p>
+</div>
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+    <script  src="animated-counter.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 
 
-
-    
-
-
-</body>
-</html>    
+</html>   
