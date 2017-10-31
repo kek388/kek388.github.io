@@ -1,95 +1,246 @@
 <!DOCTYPE html>
-<html>
-<head >
+<html lang="en">
+  <head>
+    <title>edu page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styleeducation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+jQuery(function ($) {
+
+var $window = $(window),
+    $cedu = $('.cedu');
+
+function resize() {
+    if ($window.width() < 750) {
+        $cedu.removeClass("cedu");
+
+
+    } else if ($window.width() > 750) {
+        $cedu.addClass("cedu");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+function showImage(imgName) {
+    document.getElementById('largeImg').src = imgName;
+    showLargeImagePanel();
+    unselectAll();
+}
+function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
+}
+function unselectAll() {
+    if(document.selection) document.selection.empty();
+    if(window.getSelection) window.getSelection().removeAllRanges();
+}
+function hideMe(obj) {
+    obj.style.visibility = 'hidden';
+}
+
+
+
+
+
+
+</script>
+  </head>
   
-  <link rel="stylesheet" type="text/css" href="style1.css">
-</head>
-
 <body>
-   
-   <header>
-    
-      <ul>
-       <li style="float:left"><a class="kekjiahuei" href="index.html"><b>KEK JIA HUEI</b><span><img src="cname.png" alt="cname" height="80px" width="300px"></span></a></li>
-       <li><a href="about.html#contact">Contact</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="myeducation.html" class="activepage">My Education</a></li>
-       <li><a href="myskill.html">My Skill</a></li>
-       <li><a href="myhistory.html">My History</a></li>
-      </ul>
-       
-    </header>
-
-    <h1 id="etitle">Education</h1>
-    <p id="ep"> - Graduated from <a href="https://www.facebook.com/pages/SJKCKUANG-HWA/127915003907661" 
-    target="_blank">SJK(C)KWANG HWA</a> (3JANUARY1999 - 31DECEMBER2004) </p> 
-    
-
-    <div class="educenter">
-    <img src = "kuanghwa.jpg" width= 38% height="400px">
-    <img src ="s6pic.jpg" width=38% height="400px">
-    </div>
-    
-    <br>
-    <p id="ep"> - Graduated from <a href="https://smktp.edupage.org/"
-    target="_blank"> SMK TANAH PUTEH</a> (3ANUARY2005 - 31DECEMBER2009)
-    <br> Subject choosen : Science ( ADDMATH, CHEMISTRY, PHYSICS, IT)
-    </p>
 
 
-        <div class="educenter">
-            <img src = "tpclass.jpg" width=28% height="400px">
-                <img src = "tptptp.jpg" width=28% height="400px">
-                    <img src = "smtp.jpg" width=28% height="400px">
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light navbg">
+   <a class="navbar-brand navbg eduhover" style="color:midnightblue" href="index.html">KEK JIA HUEI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                </div>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ml-auto " >
+      <li class="nav-item  ">
+        <a class="nav-link text eduhover" href="myhistory.html">History </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link edubtn" href="myskill.html">Skill</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text eduhover" href="myeducation.html">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text eduhover" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text eduhover" href="about.html#contact">Contact</a>
+      </li>
+    </ul>
+  </div> 
+ </nav>
+ 
+ 
+ <div class="row">
+  <div class="col-sm-12 ">
+<img id="educover" src="edu4.jpg" class="cedu" alt="Responsive image" width=100%>
+  </div>
+ </div>
+</div>
 
-        <br><p id="ep"> - Graduated from <a href="http://www.smart.edu.my/site/index.php?popup_anywhere_preview=true" target="_blank"> SMK ABDUL RAHMAN TALIB</a> (1JUNE2010 - 31DECEMBER2011)<br>
+
+<div class="container">
+  <p class="pe text-center"><br> Graduated from <a href="https://www.facebook.com/pages/SJKCKUANG-HWA/127915003907661" 
+    target="_blank">SJK(C)KWANG HWA</a> <br>(3Jan1999 - 31Dec2004) </p>  
+ <div class="row">
+  <div class="col-sm-6" ><img src = "kuanghwa.jpg" width="100%"      
+  style="cursor:pointer" onclick="showImage('./kuanghwa.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-6" ><img src = "s6pic.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./s6pic.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+</div>
+
+<div class="container">
+  <p class="se text-center"><br> Graduated from <a href="https://smktp.edupage.org/"
+    target="_blank"> SMK TANAH PUTEH</a> <br>(3Jan2005 - 31Dec2009)
+    <br> Subject choosen : Science ( ADDMATH, CHEMISTRY, PHYSICS, IT) </p>  
+ <div class="row">
+  <div class="col-sm-4" ><img src = "tpclass.jpg" width="100%" 
+  style="cursor:pointer" onclick="showImage('./tpclass.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "tptptp.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./tptptp.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "smtp.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./smtp.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+</div>
+
+<div class="container">
+  <p class="f6e text-center"><br> Graduated from 
+  <a href="http://www.smart.edu.my/site/index.php?popup_anywhere_preview=true" target="_blank"> SMK ABDUL RAHMAN TALIB</a> <br>(1Jun2010 - 31Dec2011)<br>
         Subject choosen : Science ( MATHS T, CHEMISTRY, PHYSICS, PA)
+</p>  
+ <div class="row">
+  <div class="col-sm-4" ><img src = "stmp.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./stmp.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "smart.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./smart.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "stpmpic.jpg" width="100%"
+  style="cursor:pointer" onclick="showImage('./stpmpic.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+</div>
 
-        </p>    
-        
-        <div class="educenter">
-            <img src = "stmp.jpg" width=28% height="400px">
-                <img src = "smart.jpg" width=28% height="400px">
-                    <img src = "stpmpic.jpg" width=28% height="400px">
+<div class="container">
+  <p class="me text-center"><br> Graduated from <a href="https://www.facebook.com/millionaireinvestorprogram/?ref=br_rs"
+           target="_blank"> MILLIONAIRE INVESTOR PROGRAM </a> <br>(18Nov2012 - 19Nov2012)
+</p>  
+ <div class="row">
+  <div class="col-sm-12" ><img src = "mipic.jpg" class="cedu" width="100%"
+  style="cursor:pointer" onclick="showImage('./mipic.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+</div>
 
-                </div>    
+<div class="container">
+  <p class="mme text-center"><br> Graduated from <a href="http://www.masteryasia.com/life-changing-money-mastery-boot-camp-huge-success/" target="_blank"> MONEY MASTERY BOOT CAMP</a><br> (8Jun2013 - 10Jun2012)
+</p>  
+ <div class="row">
+  <div class="col-sm-12" ><img src = "mmpic.jpg" class="cedu" width="100%"
+  style="cursor:pointer" onclick="showImage('./mmpic.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+</div>
+
+<div class="container">
+  <p class="mme text-center"><br> Self-learning programming skill from <a href="https://www.w3schools.com/" target="_blank">w3schools</a>, <a href="https://www.freecodecamp.com" target="_blank">freeCodeCamp</a>, <a href="https://www.google.com" target="_blank">Google</a>, <a href="https://www.youtube.com" target="_blank">Youtube</a><br>
+            Skill learnt : HTML/HTML5, CSS/CSS3, PHP, JAVASCRIPT, JQUERY <br>
+            Beginner in JAVASCRIPT, JQUERY, PHP <br>
+</p>  
+ <div class="row">
+  <div class="col-sm-6" ><img src = "w3shtml.png" width="100%"
+  style="cursor:pointer" onclick="showImage('./w3shtml.png');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-6" ><img src = "w3scss.png" width="100%"
+  style="cursor:pointer" onclick="showImage('./w3scss.png');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+ </div>
+ <pre></pre>
+ <div class="row">
+  <div class="col-sm-4" ><img src = "jstest.png" width="100%"
+  style="cursor:pointer" onclick="showImage('./jstest.png');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "jquery.png" width="100%"
+  style="cursor:pointer" onclick="showImage('./jquery.png');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <div class="col-sm-4" ><img src = "phptest.png" width="100%"
+  style="cursor:pointer" onclick="showImage('./phptest.png');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div></div>
+  <pre></pre>
+
+ </div>
+</div>
+
+<pre></pre>
 
 
-           <br><p id="ep"> - Graduated from <a href="https://www.facebook.com/millionaireinvestorprogram/?ref=br_rs"
-           target="_blank"> MILLIONAIRE INVESTOR PROGRAM </a> (18NOVEMBER2012 - 19DNOVEMBER2012)</p> 
-           
-           
-           <div class="educenter">
-            <img src = "mipic.jpg" width=88% height="400px">
-            </div>
-            
-            <br><p id="ep"> - Graduated from <a href="http://www.masteryasia.com/life-changing-money-mastery-boot-camp-huge-success/" target="_blank"> MONEY MASTERY BOOT CAMP</a> (8JUNE2013 - 10JUNE2012)</p>    
 
-            <div class="educenter">
-            <img src = "mmpic.jpg" width=88% height="400px">
-            </div>
-
-            <br><p id="ep"> - Self-learning programming skill from <a href="https://www.w3schools.com/" target="_blank">w3schools</a>, <a href="https://www.freecodecamp.com" target="_blank">freeCodeCamp</a>, <a href="https://www.google.com" target="_blank">Google</a>, <a href="https://www.youtube.com" target="_blank">Youtube</a><br>
-            Skill learnt : HTML/HTML5 , CSS/CSS3 , PHP , JAVASCRIPT<br>
-            Beginner in PHP and JAVASCRIPT <br> <br>
-            </p>
-                 
-                 <div class="educenter">
-            <img class="getbig" src = "w3scss.png" width=13.8% height="388px">
-            <img class="getbig" src = "w3shtml.png" width=13.8% height="388px">
-            <img class="getbig" src = "phptest.png" width=13.8% height="388px">
-            <img class="getbig" src = "jstest.png" width=13.8% height="388px">
-
-            </div><br>
-
-
-   <div class="footer1" width=100%>
-
-     <p><br>Copyright &copy JiaHuei KEK 2017</p></div>
+  
+  <div class="container">
+     <p class="text-center cright" ><br>Copyright &copy JiaHuei KEK 2017</p></div>
+  </div>
 
 
 
-</body>
-</html>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  src="animated-counter.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>       
