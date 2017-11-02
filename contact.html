@@ -67,6 +67,21 @@ function resize() {
 });
 
 
+function showImage(imgName) {
+    document.getElementById('largeImg').src = imgName;
+    showLargeImagePanel();
+    unselectAll();
+}
+function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
+}
+function unselectAll() {
+    if(document.selection) document.selection.empty();
+    if(window.getSelection) window.getSelection().removeAllRanges();
+}
+function hideMe(obj) {
+    obj.style.visibility = 'hidden';
+}
 
 </script>
 
@@ -113,13 +128,26 @@ function resize() {
 
      
          <a href="https://web.facebook.com/kek.huei" target="_blank"><img  class="ssicon" src="facebook.png" alt="skyearth" ></a>
-         <a href="#" target="_blank"><img  class="ssicon" src="snap.jpg" alt="skyearth" ></a>
+
+
+
+         <img  class="ssicon" src="snap.jpg" alt="skyearth"       
+         style="cursor:pointer" onclick="showImage('./snap1.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div>
+
+
+
+
          <a href="https://www.linkedin.com/in/jia-huei-kek-64b465150/" target="_blank"><img  class="ssicon" src="link.png" alt="skyearth"></a>
          <a href="https://www.instagram.com/kek388/?hl=en" target="_blank"><img  class="ssicon" src="insta.jpg" alt="skyearth"></a>
-         <a href="https://twitter.com/kekjh" target="_blank"><img  class="ssicon" src="twitter.png" alt="skyearth" ></a>
          
 
 
+         <img  class="ssicon" src="wechat.jpg" alt="skyearth"       
+         style="cursor:pointer" onclick="showImage('./wechat1.jpg');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg"></div>
 
 
 
