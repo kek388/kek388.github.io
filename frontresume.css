@@ -183,10 +183,11 @@ border-radius:50% !important;
 
 	position:relative;
 z-index:15!important;	
-border-top-left-radius: 10000px !important;
-border-top-right-radius: 10000px !important;
-border-bottom-left-radius: 10000px !important;
-border-bottom-right-radius: 10000px !important;
+border-radius:50% !important;
+-o-border-topleft-radius: 50px !important;  
+    -o-border-topright-radius: 50px !important;
+    -o-border-bottomleft-radius: 50px !important;
+    -o-border-bottomright-radius: 50px !important;
 
 }
 .welcome{
