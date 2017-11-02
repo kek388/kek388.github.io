@@ -168,8 +168,9 @@ li a:hover{
     list-style-type: none;
 
 	position:relative;
-z-index:15!important;	
-border-radius:50% !important;
+z-index:15!important;
+border-radius:50% !important;	
+-webkit-border-radius:50% !important;
 
 }
 
