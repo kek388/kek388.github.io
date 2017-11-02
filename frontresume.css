@@ -184,10 +184,8 @@ border-radius:50% !important;
 	position:relative;
 z-index:15!important;	
 border-radius:50% !important;
--o-border-topleft-radius: 50px !important;  
-    -o-border-topright-radius: 50px !important;
-    -o-border-bottomleft-radius: 50px !important;
-    -o-border-bottomright-radius: 50px !important;
+-webkit-border-radius:50% !important;
+
 
 }
 .welcome{
