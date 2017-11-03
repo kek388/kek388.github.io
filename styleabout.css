@@ -4,7 +4,7 @@
 
 .aboutcover{
 	height:388px;
-	border-radius:18px;
+	border-radius:18px !important;
 }
 
 .test1{
