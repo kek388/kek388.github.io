@@ -170,8 +170,8 @@ li a:hover{
 	position:relative;
 z-index:15!important;
 border-radius:50% !important;	
--webkit-border-radius:50% !important;
-
+-webkit-border-radius: 50% !important;
+-moz-border-radius: 50% !important;
 }
 
 
@@ -185,8 +185,8 @@ border-radius:50% !important;
 	position:relative;
 z-index:15!important;	
 border-radius:50% !important;
--webkit-border-radius:50% !important;
-
+-webkit-border-radius: 50% !important;
+-moz-border-radius: 50% !important;
 
 }
 .welcome{

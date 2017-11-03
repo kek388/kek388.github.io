@@ -5,6 +5,8 @@
 .aboutcover{
 	height:388px;
 	border-radius:18px !important;
+-webkit-border-radius: 18px;
+-moz-border-radius: 18px;
 }
 
 .test1{
