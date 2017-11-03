@@ -171,6 +171,10 @@ li a:hover{
 z-index:15!important;
 -webkit-border-radius: 50% !important;
 -moz-border-radius: 50% !important;
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;
 }
 
 
@@ -182,7 +186,11 @@ z-index:15!important;
     list-style-type: none;
 
 	position:relative;
-z-index:15!important;	
+z-index:15!important;
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;	
 -webkit-border-radius: 50% !important;
 -moz-border-radius: 50% !important;
 
